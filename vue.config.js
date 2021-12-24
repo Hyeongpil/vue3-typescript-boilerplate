@@ -18,7 +18,7 @@ module.exports = {
       new CaseSensitivePathsPlugin(),
       new webpack.DefinePlugin({
         PROJECT_BUILD_DATE: JSON.stringify(new Date().toISOString()),
-      }),
+      }), // 모바일 시 유용 - 캐시
     ],
     resolve: {
       alias: {
